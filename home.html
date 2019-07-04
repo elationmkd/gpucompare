@@ -4,196 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GPU BATTLE</title>
-    <link rel="stylesheet" type="text/css" href="styling.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/styling.css">
+    <title>GPU Comparison</title>
 </head>
+
 <body>
-    <div class="navbar">
-        <div class="container-background">
-            <div class="row">
-                <div id="navbar">
-                    <div style="white-space: nowrap; margin-right: 1em;" class="title">
-                    <div style="width: 52px; margin-top: 2px;" class="primary-logo">
-                    <img alt="GPUBattlelogo" src="http://www.hayatimizoyun.com/wp-content/uploads/2018/03/NVIDIA-LOGO-2018.jpg" width="48" height="48">
-                    </div>
-                    <div class="name">
-                        <a href="GPUBATTLE.com">
-                            <span class="highlight">GPU BATTLE</span>
-                        </a>
-                    </div>
-                    </div>
-                    <div class="nav">
-                        <ul>
-                            <li>
-                                <a href="tuka-score" class="fastclick">
-                                <img title="Sort" alt="Sort" class="nav-icon" src="/style.css/icon-sort.png" height="24" width="23">
-                                <span>Sort</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="/cooltext329410922691200.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sort</a>
+                </li>
+              </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
-        </div>
-        <div id="content">
-            <div class="flush"></div>
-            <div class="page-container without-menu">
-                <div id="header">
-                    <div id="title">
-                        <h1>
-                            <span class="accent">GPU</span>
-                            <span>Battle</span>
-                        </h1>
+    </nav>
+
+    <!-- Compare section main -->
+
+    <div class="main-section">
+            <div class="dropdown-left">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Choose a GPU for comparison!
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">GPU1</a>
+                      <a class="dropdown-item" href="#">GPU2</a>
+                      <a class="dropdown-item" href="#">GPU3</a>
                     </div>
-                    <div class="section" id="header-compare">
-                        <h2>Let the GPU Battle Begin!</h2>
-                    </div>
-                    <div class="compare-form">
-                        <div class="inner">
-                            <form method="POST" class="search-compare" onsubmit="return validateForm();" data-domain="gpus" action="/api/gpus/compare">
-                            <input type="hidden" name="from" id="from" value="/">
-                            
-                        </div>
-                        <div class="input">
-                            <div class="left">
-                                <div class="compare-wrapper">
-                                    <input id="product1" name="product1" class="compare" type="text" placeholder="GPU ONE" value autocomplete="off">
-                                </div>
-                                <div class="vs">VS</div>
-                                <div class="right">
-                                    <div class="compare-wrapper">
-                                        <input id="product2" name="product2" class="compare" type="text" placeholder="GPU Two" value autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="submit">
-                                    <input type="submit" value="compare" class="primarybutton">
-                                </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="content-container" class="content">
-                        <div id="main">
-                            <div class="section" id="top-lists">
-                                <div class="header">
-                                    <h2>Best GPU's
-                                    <small>All the strongest GPU's rated!</small>
-                                    </h2>
-                                </div>
-                                <div class="container container-top">
-                                    <div class="top-list-selector">
-                                        <ul class="top-list-selector-menu">
-                                            <li data-selector="Desktop" class="menu-item select fastclick active">
-                                                <span class="label">Desktop</span>
-                                            </li>
-                                            <li data-selector="Laptop" class="menu-item select fastclick">
-                                                <span class="label">Laptop</span>
-                                            </li>
-                                        </ul>
-                                        <div class="top-list-showcase-container select multicategory default active" data-selector="Desktop" style="display: block;">
-                                        <div class="top-list-container">
-                                            <div class="top-list">
-                                                <div class="heading">
-                                                    <h3 class="list-title">
-                                                        Best Performance under 300$
-                                                    </h3>
-                                                </div>
-                                            <div class="list">
-                                                <div class="list-item">
-                                                <div class="bar">
-                                                <div class="bar-inner score horizontal" data-score="1.0" style="width: 100%">
-                                                </div>
-                                                <a class="product-name-short" href="https://www.nvidia.com/en-in/geforce/products/10series/geforce-gtx-1060/">GeForce GTX 1060</a>
-                                                <span class="prop-value">100%</span>
-                                            </div>
-                                        </div>
-                                  </div>
-                                  <div class="list-item">
-                                      <div class="bar">
-                                          <div class="bar-inner-score horizontal1" data-score="0.79373920924201580" style="width: 79.4%;">
-                                              <a class="product-name-short" href="https://www.amazon.com/EVGA-GeForce-Support-Graphics-03G-P4-6160-KR/dp/B01KUADE3O">GeForce GTX 1060 3GB</a>
-                                              <span class="prop-value">79.4</span>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="list-item">
-                                      <div class="bar">
-                                          <div class="bar-inner score horizontal bar" data-score="0.5" style="width: 50%;">
-                                        <a class="product-name-short" href="https://www.techpowerup.com/gpu-specs/geforce-gtx-970.c2620">GeForce GTX 970</a>
-                                        <span class="prop-value">50%</span>
-                                        </div>
-                                      </div>
-                                  </div>
-                                  <div class="list-item">
-                                      <div class="bar">
-                                          <div class="bar-inner score horizontal bar" data-score="30" style="width: 30%%">
-                                        <a class="product-name-short" href="https://www.techpowerup.com/gpu-specs/radeon-hd-4890.c244" style="width: 0%;">Radeon HD 4890</a>
-                                        <span class="prop-value">30%</span>
-                                        
-                                        </div>
-                                      </div>
-                                  </div>
-                                  <div class="list-item">
-                                      <div class="bar">
-                                          <div class="bar-inner score horizontal-bar" data-score="10" style="width: 0%">
-                                        <a class="product-name-short" href="https://www.techpowerup.com/gpu-specs/radeon-r7-250.c2459" style="width: 10%;">Radeon R7 250X</a>
-                                        <span class="prop-value">10%</span>
-                                        </div>
-                                      </div>
-                                  </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="top-list-container">
-                    <div class="top-list">
-                        <div class="heading">
-                            <h3 class="list-title">Best Performance Over 300$!</h3>
-                        </div>
-                    <div class="list">
-                        <div class="list-item">
-                            <div class="bar">
-                                <div class="bar-inner score horizontal-bar" data-score="0.999999999999999" style="width: 100%">
-                                <a class="product-name-short" href="https://www.geforce.com/hardware/desktop-gpus/geforce-gtx-1080/specifications">GeForce GTX 1080</a>
-                                <span class="prop-value">100%</span>
-                                </div>
-                            </div>
-                                </div>
-                                <div class="list-item">
-                                    <div class="bar">
-                                        <div class="bar-inner score horizontal bar" data-score="0.8239239338732064" style="width 82.4%">
-                                        <a class="product-name-short" href="https://www.geforce.com/hardware/desktop-gpus/geforce-gtx-1070/specifications">GeForce GTX 1070</a>
-                                        <span class="prop-value">82.4%</span> 
-                                        </div>
-                                    </div>
-                                </div>
-                            <div class="list-item">
-                                <div class="bar">
-                                    <div class="bar-inner score horizontal bar" data-score="0.5" style="width: 50%">
-                                    <a class="product-name-short" href="https://www.geforce.com/hardware/desktop-gpus/geforce-gtx-980">GeForce GTX 980</a>
-                                    <span class="prop-value">50%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-item">
-                                    <div class="bar">
-                                        <div class="bar-inner score horizontal bar" data-score="0.22534911717234235" style="width: 22.5%">
-                                        <a class="product-name-short" href="https://www.techpowerup.com/gpu-specs/radeon-r9-290.c2397">Radeon R9 290</a>
-                                        <span class="prop-value">22.5%</span> 
-                                        </div>
-                                </div>
-                            </div>
-                            
-                                        
-                                        
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
+            <!-- right button -->
+            <div class="dropdown-right">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Choose a GPU for comparison!
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">GPU1</a>
+                      <a class="dropdown-item" href="#">GPU2</a>
+                      <a class="dropdown-item" href="#">GPU3</a>
+                    </div>
+            </div>
     </div>
+
+    <!-- carousel section -->
+
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view">
+          <img class="d-block w-100" src="./evga-gtx-1080-100663485-orig.png"
+            alt="First slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Light mask</h3>
+          <p>The Almighty TITAN</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="./background3.png"
+            alt="Second slide">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Decent performer</h3>
+          <p>Secondary text</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="/download (1)"
+            alt="Third slide">
+          <div class="mask rgba-black-slight"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Slight mask</h3>
+          <p>Third text</p>
+        </div>
+      </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+
+
+
+
+    <!-- content section -->
+
+    <div class="content">
+      <div class="performance">
+              <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+              <h1 class="display-4">Top Rated GPU's!</h1>
+              <p class="lead">Here are the best rated GPU's budget wise!</p>
+              </div>
+              </div>
+      </div>
+    </div>
+    
+    
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
