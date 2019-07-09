@@ -1,0 +1,43 @@
+[
+	{
+		"id" : 1,
+		"name" : "gtx 1070",
+		"cudaCores" : 24232,
+		"release date" : "10.10.2017",
+		"canOverclock" : true,
+		"1080pFrames" : 100
+	},
+	{
+		"id" : 2,
+		"name" : "gtx 1080",
+		"cudaCores" : 24232,
+		"release date" : "10.10.2017",
+		"canOverclock" : true,
+		"1080pFrames" : 100
+	},
+	{
+		"id" : 3,
+		"name" : "gtx 1040",
+		"cudaCores" : 24232,
+		"release date" : "10.10.2017",
+		"canOverclock" : true,
+		"1080pFrames" : 100
+	},
+	{
+		"id" : 4,
+		"name" : "gtx 1030",
+		"cudaCores" : 24232,
+		"release date" : "10.10.2017",
+		"canOverclock" : true,
+		"1080pFrames" : 100
+	},
+	{
+		"id" : 5,
+		"name" : "gtx 1010",
+		"cudaCores" : 24232,
+		"release date" : "10.10.2017",
+		"canOverclock" : true,
+		"1080pFrames" : 100
+	}
+
+]

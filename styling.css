@@ -1,0 +1,225 @@
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown-left {
+    width: 20%;
+    float: left;
+    margin-left: 30%;
+}
+
+#vs-square {
+    width: 5%;
+    float: left;
+    padding-left: 0.2%;
+}
+
+#vs {
+    font-family: Arial, Helvetica, serif;
+    font-size: 150%;
+    font-style: bold;
+    
+}
+
+.dropdown-right {
+    width: 27.5%;
+    float: left;
+    
+}
+
+.performance {
+    padding-top: 50px;
+}
+
+.carousel-inner {
+    margin-top: 100px;
+    height: 500px;
+    width: 100%;
+}
+
+.carousel-item {
+    width: 50%;
+    margin-left: 25%;
+    
+}
+
+.slika {
+    margin-right: 10%;
+    max-height:100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.statistics-main {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.statistics-div {
+    width: 50%;
+    height: 300px;
+    float: left;
+    padding: 3%;
+    padding-right: 5%;
+    margin-bottom: 30px;
+}
+
+.main-ul li{
+    height: 25px;
+    background-color: #E46305;
+    width: 100%;
+    margin-bottom: 6px;
+    padding-left: 10px;
+}
+
+.percent {
+    float: right;
+    padding-right: 5px;
+}
+
+#main-li-1 {
+    width: 100%;
+}
+
+#main-li-2 {
+    width: 79.4%;
+}
+
+#main-li-3 {
+    width: 60%;
+}
+
+#main-li-4 {
+    width: 60%;
+    background-color: white;
+}
+
+#main-li-5 {
+    width: 60%;
+    background-color: white;
+}
+
+#main-li-6 {
+    width: 100%;
+}
+
+#main-li-7 {
+    width: 82.4%;
+}
+
+#main-li-8 {
+    width: 60%;
+}
+
+#main-li-9 {
+    width: 65%;
+    background-color: white;
+}
+
+#main-li-10 {
+    width: 100%;
+}
+#main-li-11 {
+    width: 97.3%;
+}
+
+#main-li-12 {
+    width: 92.4%;
+}
+
+#main-li-13 {
+    width: 90.5%;
+}
+
+#main-li-14 {
+    width: 85%;
+}
+
+#main-li-15 {
+    width: 100%;
+}
+
+#main-li-16 {
+    width: 100%;
+}
+
+#main-li-17 {
+    width: 100%;
+}
+
+#main-li-18 {
+    width: 100%;
+}
+
+#main-li-19 {
+    width: 100%;
+}
+
+
+
+.statistics-div {
+    background-color: white;
+}
+
+.pictures-leftpictures-left {
+    float: right;
+}
+
+.container {
+    float: right;
+    margin-right: 250px;
+    margin-top: 50px;
+}
+
+
+
+
+.display-4 {
+    margin-left: 36%;
+}
+.lead {
+    margin-left: 36%;
+}
+
+.second-first {
+    margin-left: 67%;
+}
+.recommend-pics {
+    margin-left: 65px;
+    margin-top: 65px; 
+}
+.recommend-pics2 {
+    margin-left: 65px;
+    margin-top: 65px; 
+}
+.recommend-pics3 {
+    margin-left: 65px;
+    margin-top: 65px; 
+}
+
+.table-responsive table-bordered movie-table {
+    
+}
+
+
+
+/* TEST */
+
+
+
+
+.dark-row{
+    background:#AEC5E8;
+    
+}
+.light-row{
+    
+    background:#F1F3F0;
+}
+
+.movie-table-head{
+    
+    background: ;
+}
