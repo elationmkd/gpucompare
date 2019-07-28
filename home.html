@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styling.css">
+    <title>GPU Comparison</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="main-container">
+    <div class="autocomplete-section">
+        <div id="autocompleteContainer1">
+            <label>First GPU</label>
+            <input type="text" id="autocompleteInput1" class="autocomplete-input" name="firstInput" placeholder="set GPU"/>
+        </div>
+        <div id="autocompleteContainer2">
+            <label>Second GPU</label>
+            <input type="text" id="autocompleteInput2" class="autocomplete-input" name="secondInput" placeholder="set GPU"/>
+        </div>
+        <button class="compare-btn">Compare</button>
+        <button class="clear-btn">Clear</button>
+    </div>
+    <div class="compare-section">
+        <div class="first-gpu gpu-stats"></div>
+        <div class="second-gpu gpu-stats"></div>
+    </div>
+</div>
+
+<script src="javas.js"></script>
+</body>
+</html>
