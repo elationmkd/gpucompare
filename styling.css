@@ -1,227 +1,119 @@
 body {
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-
-/* form 1 */
-
-
-.performance {
-    padding-top: 50px;
+.compare-section {
+    display: flex;
 }
 
-.carousel-inner {
-    margin-top: 100px;
-    height: 350px;
-    width: 100%;
-}
-
-.carousel-item {
-    width: 50%;
-    margin-left: 25%;
-    
-}
-
-.slika {
-    margin-right: 10%;
-    max-height:100%;
-    max-width: 100%;
-    object-fit: contain;
-}
-
-.statistics-main {
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.statistics-div {
-    width: 50%;
-    height: 300px;
-    float: left;
-    padding: 3%;
-    padding-right: 5%;
-    margin-bottom: 30px;
-}
-
-.main-ul li{
-    height: 25px;
-    background-color: #E46305;
-    width: 100%;
-    margin-bottom: 6px;
-    padding-left: 10px;
-}
-
-.percent {
-    float: right;
-    padding-right: 5px;
-}
-
-#main-li-1 {
-    width: 100%;
-}
-
-#main-li-2 {
-    width: 79.4%;
-}
-
-#main-li-3 {
-    width: 60%;
-}
-
-#main-li-4 {
-    width: 60%;
-    background-color: white;
-}
-
-#main-li-5 {
-    width: 60%;
-    background-color: white;
-}
-
-#main-li-6 {
-    width: 100%;
-}
-
-#main-li-7 {
-    width: 82.4%;
-}
-
-#main-li-8 {
-    width: 60%;
-}
-
-#main-li-9 {
-    width: 65%;
-    background-color: white;
-}
-
-#main-li-10 {
-    width: 100%;
-}
-#main-li-11 {
-    width: 97.3%;
-}
-
-#main-li-12 {
-    width: 92.4%;
-}
-
-#main-li-13 {
-    width: 90.5%;
-}
-
-#main-li-14 {
-    width: 85%;
-}
-
-#main-li-15 {
-    width: 100%;
-}
-
-#main-li-16 {
-    width: 100%;
-}
-
-#main-li-17 {
-    width: 100%;
-}
-
-#main-li-18 {
-    width: 100%;
-}
-
-#main-li-19 {
-    width: 100%;
-}
-
-
-
-.statistics-div {
-    background-color: white;
-}
-
-.pictures-leftpictures-left {
-    float: right;
-}
-
-.container {
-    float: right;
-    margin-right: 250px;
-    margin-top: 50px;
-    margin-bottom: 4px;
-}
-
-
-
-
-.display-4 {
-    margin-left: 36%;
-}
-.lead {
-    margin-left: 36%;
-}
-
-.second-first {
-    margin-left: 67%;
-}
-.recommend-pics {
-    width: 50%;
-    margin-top: 50px;
-    margin-left: 15px;
-    
-}
-.recommend-pics2 {
-    width: 50%;
-    margin-left: 15px;
-    margin-top: 15px;
-    
-    
-}
-.recommend-pics3 {
-    width: 50%;
-    margin-top: 110px;
-    margin-left: 15px;
-    padding-bottom: 0px;
-
-}
-
-.recommend-pics4 {
-    padding-top: 50px;
-    box-sizing: border-box;
-    margin-bottom: 0%;
-    width: 50%;
-}
-
-
-.btn btn-outline-success my-2 my-sm-01 {
-    background-color: red;
-}
-
-.movie-table-head {
+.compare-btn, .clear-btn {
+    background: #5191bc;
+    color: white;
+    border: 1px solid #cecece;
+    border-radius: 3px;
+    padding: 11px;
+    margin: 5px;
+    transition: background-color 0.2s;
+    cursor: pointer;
     outline: none;
 }
-.headclass {
-    float: right;
-    font-family: Arial, Helvetica, sans-serif;  
+
+.clear-btn {
+    background: #cd201b;
+}
+
+.clear-btn:hover {
+    background: #db251e;
 
 }
 
-.row {
-    margin-top: 20px;
+.clear-btn:active {
+    outline: none;
+    background: #a81d18;
+
 }
 
-/* TEST */
+.compare-btn:hover {
+    background: #67aae2;
 
-
-
-
-.dark-row{
-    background:#AEC5E8;
-    
 }
-.light-row{
-    
-    background:#F1F3F0;
+
+.compare-btn:active {
+    outline: none;
+    background: #5191bc;
+
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+.autocomplete-section {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.autocomplete-section ul {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #cecece;
+    background-color: azure;
+    box-shadow: 0 4px 5px rgba(160, 160, 160, 0.6);
+}
+
+.autocomplete-input {
+    padding: 10px;
+}
+
+.autocomplete-section ul li {
+    border-bottom: 1px solid #cecece;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.autocomplete-section ul li:hover {
+    background-color: #5191bc;
+    color: white;
+}
+
+.autocomplete-section ul li:last-child {
+    border-bottom: none;
+}
+
+
+#autocompleteContainer1, #autocompleteContainer2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.gpu-stats {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+}
+
+.comparison-row {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #cecece;
+}
+
+.comparison-row div {
+    flex: 1;
+    padding: 4px;
+}
+
+.comparison-row div:first-child {
+    border-right: 1px solid #cecece;
 }
