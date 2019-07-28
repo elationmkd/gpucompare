@@ -1,43 +1,30 @@
 [
 	{
 		"id" : 1,
-		"name" : "gtx 1070",
-		"cudaCores" : 24232,
-		"release date" : "10.10.2017",
-		"canOverclock" : true,
-		"1080pFrames" : 100
+		"name" : "rtx 2080ti",
+		"framebuffer" : 11,
+		"boostClock" : "1635",
+		"memoryspeed" : 14
 	},
-	{
-		"id" : 2,
-		"name" : "gtx 1080",
-		"cudaCores" : 24232,
-		"release date" : "10.10.2017",
-		"canOverclock" : true,
-		"1080pFrames" : 100
-	},
-	{
-		"id" : 3,
-		"name" : "gtx 1040",
-		"cudaCores" : 24232,
-		"release date" : "10.10.2017",
-		"canOverclock" : true,
-		"1080pFrames" : 100
-	},
-	{
-		"id" : 4,
-		"name" : "gtx 1030",
-		"cudaCores" : 24232,
-		"release date" : "10.10.2017",
-		"canOverclock" : true,
-		"1080pFrames" : 100
-	},
-	{
-		"id" : 5,
-		"name" : "gtx 1010",
-		"cudaCores" : 24232,
-		"release date" : "10.10.2017",
-		"canOverclock" : true,
-		"1080pFrames" : 100
-	}
-
+  {
+    "id": 2,
+    "name": "rtx 2080",
+    "framebuffer": 8,
+    "boostClock": "1800",
+    "memoryspeed": 14
+  },
+  {
+    "id": 3,
+    "name": "Radeon RX 580",
+    "framebuffer": 8,
+    "boostClock": "1257",
+    "memoryspeed": 12
+  },
+  {
+    "id": 4,
+    "name": "geforce gtx 1080ti",
+    "framebuffer": 11,
+    "boostClock": "1582",
+    "memoryspeed": 11
+  }
 ]

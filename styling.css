@@ -3,34 +3,9 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.dropdown-left {
-    width: 20%;
-    float: left;
-    margin-left: 30%;
-    margin-top: 8.5px;
-}
 
-#vs-square {
-    width: 5%;
-    float: left;
-    padding-left: 0.2%;
-    
-}
+/* form 1 */
 
-#vs {
-    font-family: Arial, Helvetica, serif;
-    font-size: 150%;
-    font-style: bold;
-    
-}
-
-.dropdown-right {
-    width: 27.5%;
-    float: left;
-    margin-left: 20px;
-    margin-top: 8.5px;
-    
-}
 
 .performance {
     padding-top: 50px;
@@ -249,9 +224,4 @@ body {
 .light-row{
     
     background:#F1F3F0;
-}
-
-.movie-table-head{
-    
-    background: ;
 }

@@ -38,37 +38,21 @@
     <!-- Compare section main -->
 
     <div class="main-section">
-            <div class="dropdown-left">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Choose a GPU for comparison!
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" value="2080ti">GPU1</a>
-                      <a class="dropdown-item" href="#">GPU2</a>
-                      <a class="dropdown-item" href="#">GPU3</a>
-                    </div>
-            </div>
-            <div id="vs-square">
-              <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-success my-2 my-sm-01" type="submit">Battle!</button>
-              </form>
-            </div>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" id="text1" placeholder="Search" aria-label="Search" input type="text">
+        
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="textInput()" id="btn">Battle</button>
+      </form>
+            
             <!-- right button -->
-            <div class="dropdown-right">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Choose a GPU for comparison!
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">GPU1</a>
-                      <a class="dropdown-item" href="#">GPU2</a>
-                      <a class="dropdown-item" href="#">GPU3</a>
-                    </div>
-            </div>
-    </div>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            
+            </form>
     
     <!-- carousel section -->
 
-    <!--Carousel Wrapper-->
+    
     <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
     <!--Indicators-->
     <ol class="carousel-indicators">
@@ -76,8 +60,7 @@
       <li data-target="#carousel-example-2" data-slide-to="1"></li>
       <li data-target="#carousel-example-2" data-slide-to="2"></li>
     </ol>
-    <!--/.Indicators-->
-    <!--Slides-->
+      <!--Slides-->
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
         <div class="view">
@@ -114,8 +97,8 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-    <!--/.Controls-->
-  </div>
+    
+    </div>
 
 
 
